@@ -376,9 +376,9 @@ Week 4+: CBO가 자동 스케일링 (예산 20% rule 준수)
 ---
 
 **참조**: 
-- [측정·트래킹 일체](/sessions/exciting-happy-feynman/ads-playbook/references/measurement.md)
-- [튜닝 플레이북](/sessions/exciting-happy-feynman/ads-playbook/references/tuning_playbook.md)
-- [크리에이티브 설계](/sessions/exciting-happy-feynman/ads-playbook/references/creative.md)
-- [안티패턴 20+](/sessions/exciting-happy-feynman/ads-playbook/references/antipatterns.md)
-- [런칭 체크리스트](/sessions/exciting-happy-feynman/ads-playbook/references/launch_checklist.md)
+- [측정·트래킹 일체](/sessions/exciting-happy-feynman/media-buying/references/measurement.md)
+- [튜닝 플레이북](/sessions/exciting-happy-feynman/media-buying/references/tuning_playbook.md)
+- [크리에이티브 설계](/sessions/exciting-happy-feynman/media-buying/references/creative.md)
+- [안티패턴 20+](/sessions/exciting-happy-feynman/media-buying/references/antipatterns.md)
+- [런칭 체크리스트](/sessions/exciting-happy-feynman/media-buying/references/launch_checklist.md)
 

@@ -1,5 +1,5 @@
 ---
-name: ads-playbook
+name: media-buying
 version: 1.1.0
 description: |
   온라인 광고 인하우스 플레이북. 8플랫폼×10목적 진단·세팅·튜닝·용어. 시그널·러닝·크리에이티브·측정·안티패턴 처방.
@@ -7,10 +7,10 @@ description: |
   P2: 세팅해줘, 진단해줘, 튜닝해줘, optimize.
   P3: paid social, paid search, tROAS, tCPA, incrementality.
   P5: .md로.
-  NOT: IMC(→brand-campaign), 카피(→copywriting-engine), 사업전략(→biz-skill), 재무(→financial-model), KPI(→metric-tracker).
+  NOT: IMC(→brand-campaign), 카피(→copywriting-skill), 사업전략(→biz-skill), 재무(→financial-model), KPI(→metric-tracker).
 ---
 
-# ads-playbook
+# Media Buying — 미디어 바잉
 
 온라인 광고 인하우스 마케터를 위한 광고플레이북. 8플랫폼(메타광고·구글광고·틱톡광고·네이버광고·카카오광고·카카오모먼트·링크드인광고·ASA) × 10광고목적 광고운영. 시그널·러닝·크리에이티브·측정·안티패턴 일관 처방. 퍼포먼스마케팅 인하우스 실전.
 
@@ -284,55 +284,14 @@ description: |
 
 ---
 
+## §CONFIRM_GATE
+산출물 송출 직전 형 컨펌 1회. → `shaper-skill/references/_common/confirm-gate.md`
 
+## §INV NO_WORK_LABEL
+산출물·대화 작업 라벨 ZERO. ALLOW: ROAS·CPA·CAPI·tROAS·tCPA·SKAN·PMax·ASA·ASC·UAC·CTR·CVR·CPC·CPM·LTV·CAC·MMP·MMM. → `shaper-skill/references/no-work-label.md`
 
----
-
-## §CONFIRM_GATE — 송출 직전 형 컨펌 (3단계 가드)
-
-**목적:** PRE_WRITE 자가신고 우회 차단. 자체검증 통과 = 송출 ✗ → 형 컨펌 후 송출.
-
-**발동:** 산출물 송출 *직전* 1회.
-
-**형식 (verbatim):**
-```
-🔍 송출 전 검토 부탁드려요. AI 티·번역투·장황 있나요?
-[OK / 수정 / 재작성]
-```
-
-**규칙:**
-- 형 OK → 최종 송출
-- 형 수정 → 형 지적 부분만 PRE_WRITE 재진입 → 재출력
-- 형 재작성 → 모드 처음부터 재실행
-
-**SCOPE_OUT (컨펌 면제):**
-- ≤5줄 답변·단답·확인성·실행보고
-- 진단 본문 (대화 내 분석, 산출물 ✗)
-- 일반대화·핑퐁·컨펌게이트 자체
-
-**CHECK:** 산출물 송출인데 컨펌게이트 미발동 = FAIL → 송출 폐기·재출력.
-
-## §INV NO_WORK_LABEL (산출물·대화 본질 보호)
-
-| 항목 | 정의 |
-|------|------|
-| RULE | 산출물·대화 = 인간 언어. 작업 라벨 ZERO. (1만 페이지 1단어 = FAIL) |
-| 판정 | "이 단어, 이 대화 밖 사람이 사전 없이 읽을 수 있나?" NO → 작업 라벨 → 금지 |
-| ALLOW | ROAS·CPA·CAPI·tROAS·tCPA·SKAN·PMax·ASA·ASC·UAC·CTR·CVR·CPC·CPM·LTV·CAC·MMP·MMM |
-| CONVERT | 라벨 발견 → 실명·평문 풀어쓰기. 예) "러닝페이즈·시그널·8플랫폼×10목적" → 실제 단계·플랫폼·목적 명 / "Smart+·Advantage+" → 결과만 노출 |
-| SELF_CHECK | 튜닝 처방 출력 직전에서 자체 스캔. 1개라도 발견 = 차단·재작성. paper-engine cascade 경유 시 INV 13 자동 적용 |
-
----
-
-## 🚨 MUST cascade → paper-engine (절대규칙)
-
-**이 스킬의 모든 리포트·산출물 = paper-engine 허브 MUST 경유.** 단독 md/html 출력 = FAIL.
-
-- **진입점:** 모드별 분석 완료 후, 산출물 생성 직전 paper-engine 발동
-- **DEFAULT_RENDER = 순수 마크다운:** `.md` 산출 시 `<div>`·`<span>`·`style=` 등 인라인 HTML **전면 금지**
-- **위반 감지:** md 파일에 `<div style>`·`<span style>` 삽입 = 절대규칙 #8 위반 → 재작성
-
----
+## 🚨 MUST cascade → shaper-skill
+모든 산출물 shaper-skill MUST 경유. → `shaper-skill/references/_common/cascade-must.md`
 
 ## Gotchas
 
@@ -352,7 +311,7 @@ description: |
 ## Self-Check
 
 ```bash
-python3 scripts/validate.py ./ads-playbook/
+python3 scripts/validate.py ./media-buying/
 ```
 
 검증 항목: SKILL.md 크기·필수 섹션·스포크 파일·evals 케이스·version 필드·한국 디폴트 보존.

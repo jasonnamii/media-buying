@@ -1,4 +1,4 @@
-# Changelog — ads-playbook
+# Changelog — media-buying
 
 이 파일은 ads-playbook의 변경 이력을 기록합니다.
 [Keep a Changelog](https://keepachangelog.com/) 형식 준수.
