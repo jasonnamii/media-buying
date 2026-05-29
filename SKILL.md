@@ -1,7 +1,7 @@
 ---
 name: media-buying
-version: 1.0.1
-description: "광고 매체 집행·예산 배분·입찰·소재 테스트 운영 스킬. 한국 디폴트로 네이버·카카오·메타·구글 집행안을 만든다. P1: 미디어바잉, media buying, 매체집행, 예산배분, 입찰전략. P2: 집행해줘, 예산 나눠줘, 튜닝해줘, optimize spend. P3: bid strategy, budget allocation, paid media. P5: 집행안으로, .md로. NOT: 상위 광고전략(→ads-playbook), 카피(→copywriting-skill), 브랜드기획(→brand-campaign)."
+description: |
+  광고 매체 집행·예산 배분·입찰·소재 테스트 운영 스킬. 한국 디폴트로 네이버·카카오·메타·구글 집행안을 만든다. 트리거: 미디어바잉, media buying, 매체집행, 예산배분, 입찰전략, 집행해줘, 예산 나눠줘, 튜닝해줘, optimize spend. NOT: 상위 광고전략(→ads-playbook), 카피(→copywriting-skill), 브랜드기획(→brand-campaign).
 ---
 
 # Media Buying
